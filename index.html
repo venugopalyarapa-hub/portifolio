@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarapa Venu Gopal | Full Stack Developer & B.Tech CSE Student</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Yarapa Venu Gopal, a Computer Science undergraduate with hands-on experience in full stack development using the MERN stack, Python, and computer vision.">
+    <meta name="keywords" content="Portfolio, Yarapa Venu Gopal, Full Stack Developer, Computer Science, MERN stack, Python, Flask, OpenCV, SRM AP">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- 3D Canvas Background -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-outline"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-container">
+        <nav class="navbar" id="navbar">
+            <a href="#" class="nav-logo" id="nav-logo">YVG<span>.</span></a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#academics" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <!-- Hamburger Menu for Mobile -->
+                <button class="hamburger-btn" id="hamburger" aria-label="Open navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge fade-in-init">
+                    <span class="badge-dot"></span> CSE Undergraduate @ SRM AP
+                </div>
+                <h1 class="hero-title fade-in-init">
+                    Building <span class="gradient-text">Scalable</span><br>
+                    Full Stack & AI Systems
+                </h1>
+                <p class="hero-subtitle fade-in-init">
+                    Hi, I'm Yarapa Venu Gopal. A full stack developer and computer science student with expertise in MERN stack, Python, and OpenCV.
+                </p>
+                <div class="hero-buttons fade-in-init">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+            
+            <!-- Floating Decorative Card -->
+            <div class="hero-card glass-panel fade-in-init" id="hero-floating-card">
+                <div class="card-header">
+                    <div class="header-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="header-title">developer_profile.js</span>
+                </div>
+                <div class="card-body">
+                    <pre><code><span class="keyword">const</span> developer = {
+  name: <span class="string">'Yarapa Venu Gopal'</span>,
+  skills: [<span class="string">'MERN Stack'</span>, <span class="string">'Python'</span>, <span class="string">'OpenCV'</span>],
+  credentials: [<span class="string">'Java SE 17'</span>, <span class="string">'MongoDB'</span>]
+};
+
+<span class="keyword">function</span> <span class="function">buildSystem</span>() {
+  <span class="keyword">return</span> <span class="string">'💡 Scalable Solutions Deployed!'</span>;
+}</code></pre>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">About Me</span>
+                    <h2 class="section-title">Bridging Code and Aesthetics</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+
+                    <!-- LEFT: Text + Skills -->
+                    <div class="about-left">
+                        <div class="about-info glass-panel">
+                            <h3>Who I Am</h3>
+                            <p>
+                                I am a Computer Science undergraduate at SRM University AP with hands-on full stack development experience using the MERN stack, Python, and Flask. I build robust and scalable REST APIs, responsive frontend layouts, and database-driven solutions.
+                            </p>
+                            <p>
+                                I have a strong foundation in core computer science concepts like Data Structures &amp; Algorithms, Object-Oriented Programming (OOP), and Database Management Systems (DBMS).
+                            </p>
+                            <div class="about-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">3+</span>
+                                    <span class="stat-label">Certifications</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">2027</span>
+                                    <span class="stat-label">B.Tech Graduation</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">3+</span>
+                                    <span class="stat-label">Core Projects</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-skills glass-panel">
+                            <h3>Technical Skills</h3>
+                            <div class="skills-categories">
+                                <div class="skill-category">
+                                    <h4><i class="fa-solid fa-code"></i> Languages</h4>
+                                    <div class="skill-tags">
+                                        <div class="skill-pill"><span>Java</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>Python</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>Javascript</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>SQL</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>HTML</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>CSS</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4><i class="fa-solid fa-layer-group"></i> Frameworks &amp; Runtimes</h4>
+                                    <div class="skill-tags">
+                                        <div class="skill-pill"><span>React.js</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>Node.js</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>Express.js</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>Fast API</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4><i class="fa-solid fa-database"></i> Databases &amp; DBMS</h4>
+                                    <div class="skill-tags">
+                                        <div class="skill-pill"><span>MongoDB</span> <span class="skill-level beginner">Beginner</span></div>
+                                        <div class="skill-pill"><span>MySQL</span> <span class="skill-level beginner">Beginner</span></div>
+                                        <div class="skill-pill"><span>DBMS</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4><i class="fa-solid fa-brain"></i> AI, DSA &amp; Systems</h4>
+                                    <div class="skill-tags">
+                                        <div class="skill-pill"><span>AI &amp; ML</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>DSA</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                        <div class="skill-pill"><span>REST APIs</span> <span class="skill-level intermediate">Intermediate</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: Portrait Image -->
+                    <div class="about-right">
+                        <div class="about-image-wrap">
+                            <div class="about-image-glow"></div>
+                            <div class="about-image-card">
+                                <img src="assets/profile.jpg" alt="Yarapa Venu Gopal" class="about-profile-image">
+                            </div>
+                            <div class="about-image-badge">
+                                <i class="fa-solid fa-code"></i>
+                                <span>Full Stack Dev</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Services</span>
+                    <h2 class="section-title">What I Bring to the Table</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card glass-panel tilt-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3>Full Stack Web Apps</h3>
+                        <p>Designing scalable MERN stack (React, Node, Express, MongoDB) and Flask applications following industry-standard workflows.</p>
+                    </div>
+
+                    <div class="service-card glass-panel tilt-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h3>Backend & API Design</h3>
+                        <p>Creating secure, high-performance REST APIs with JWT authentication, optimized database queries, and robust routing structures.</p>
+                    </div>
+
+                    <div class="service-card glass-panel tilt-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3>Computer Vision / AI</h3>
+                        <p>Building real-time detection programs (contour tracing, face tracking, pixel intensity analyses) with OpenCV and NumPy.</p>
+                    </div>
+
+                    <div class="service-card glass-panel tilt-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3>Core Software Engineering</h3>
+                        <p>Developing with solid OOP patterns, efficient Data Structures & Algorithms, and database-driven optimizations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Portfolio</span>
+                    <h2 class="section-title">Featured Creations</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel tilt-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project1.png" alt="Universal Job Application Assistant UI Mockup" class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="Visit project"><i class="fa-solid fa-link"></i></a>
+                                <a href="https://github.com/venugopalyarapa-hub/Job_Application_Assistant" class="project-github" aria-label="GitHub Repository" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">FULL STACK / MERN</span>
+                            <h3>Universal Job Assistant</h3>
+                            <p>A full stack dashboard featuring JWT security, PDF parsing, automated ATS keyword matching, skill extraction, and mock interview preparations.</p>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel tilt-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project2.png" alt="Attendance System UI Mockup" class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="Visit project"><i class="fa-solid fa-link"></i></a>
+                                <a href="https://github.com/venugopalyarapa-hub/Attendance_Automation_FaceRecognition" class="project-github" aria-label="GitHub Repository" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">AI / COMPUTER VISION</span>
+                            <h3>SRM Attendance Automator</h3>
+                            <p>A smart face-recognition attendance portal featuring OTP authentication, real-time OpenCV detection, SQLite records, and Excel report generation.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>OpenCV</span>
+                                <span>SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel tilt-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project3.png" alt="Parking Space Picker UI Mockup" class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="Visit project"><i class="fa-solid fa-link"></i></a>
+                                <a href="https://github.com/venugopalyarapa-hub/Parking_Space_Detector" class="project-github" aria-label="GitHub Repository" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">AI / NUMPY</span>
+                            <h3>Parking Space Picker</h3>
+                            <p>A computer vision program detecting available slots in real time using OpenCV thresholding, frame differencing, and contour calculations.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>NumPy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-panel tilt-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project4.png" alt="Smart Exam System UI Mockup" class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="Visit project"><i class="fa-solid fa-link"></i></a>
+                                <a href="https://github.com/venugopalyarapa-hub/smart-exam-system" class="project-github" aria-label="GitHub Repository" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">AI / FULL STACK</span>
+                            <h3>Smart Exam System</h3>
+                            <p>An AI-powered online examination portal with automated proctoring, face tracking alerts, secure browser locks, and instant grading analytics.</p>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>OpenCV</span>
+                                <span>Python</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Journey</span>
+                    <h2 class="section-title">Professional Milestones</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Jun 2025 - Jul 2025</span>
+                            <h3>Full Stack Development Intern</h3>
+                            <h4>Edubot</h4>
+                            <p>Developed and deployed full-stack web applications using React.js, Flask, and MongoDB. Optimized SQL/NoSQL database queries, built responsive UIs, and collaborated in a sprint-based Agile environment.</p>
+                            <a href="assets/cert-edubot.pdf" target="_blank" class="timeline-link"><i class="fa-solid fa-file-pdf"></i> View Certificate</a>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">2023 - 2027</span>
+                            <h3>B.Tech - Computer Science and Engineering</h3>
+                            <h4>SRM University AP, Andhra Pradesh</h4>
+                            <p>Currently pursuing a Bachelor of Technology with a strong focus on Data Structures & Algorithms, Database Systems, Computer Networks, and Machine Learning.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Professional Credentials</span>
+                            <h3>Industry Certifications</h3>
+                            <h4>Oracle, MongoDB, SAP</h4>
+                            <p>Oracle Certified Java SE 17 Developer, MongoDB Certified Associate Developer, and SAP Certified Generative AI Developer.</p>
+                            <a href="assets/cert-oracle.pdf" target="_blank" class="timeline-link"><i class="fa-solid fa-file-pdf"></i> Java Cert</a>
+                            <a href="assets/cert-mongodb.pdf" target="_blank" class="timeline-link"><i class="fa-solid fa-file-pdf"></i> MongoDB Cert</a>
+                            <a href="assets/cert-sap.pdf" target="_blank" class="timeline-link"><i class="fa-solid fa-file-pdf"></i> SAP AI Cert</a>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">2025</span>
+                            <h3>National Finalist</h3>
+                            <h4>UGC Anti-Ragging National Contest</h4>
+                            <p>Recognized among the top national entries in the Instagram Threads Digital Poster category for anti-ragging awareness.</p>
+                            <a href="assets/cert-ugc.jpg" target="_blank" class="timeline-link"><i class="fa-solid fa-image"></i> Poster Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academics Section -->
+        <section id="academics" class="academics-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Educational Background</span>
+                    <h2 class="section-title">Academic Journey</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="academics-layout">
+                    <!-- Left: Level Switcher -->
+                    <div class="academics-sidebar">
+                        <button class="acad-tab active" data-target="acad-btech">
+                            <span class="acad-tab-badge current">CURRENT</span>
+                            <span class="acad-tab-name">SRM University AP</span>
+                            <span class="acad-tab-score">7.51 CGPA</span>
+                        </button>
+                        <button class="acad-tab" data-target="acad-inter">
+                            <span class="acad-tab-badge twelfth">12TH</span>
+                            <span class="acad-tab-name">Sri Chaitanya Junior College</span>
+                            <span class="acad-tab-score">8.95 CGPA</span>
+                        </button>
+                        <button class="acad-tab" data-target="acad-tenth">
+                            <span class="acad-tab-badge tenth">10TH</span>
+                            <span class="acad-tab-name">Kesava Reddy English Medium</span>
+                            <span class="acad-tab-score">9.5 CGPA</span>
+                        </button>
+                    </div>
+
+                    <!-- Right: Detail Panel -->
+                    <div class="academics-detail glass-panel">
+
+                        <!-- B.Tech Panel -->
+                        <div class="acad-panel active" id="acad-btech">
+                            <div class="acad-panel-header">
+                                <h3>Computer Science and Engineering</h3>
+                                <span class="acad-badge-status current">Out Going · 2027</span>
+                            </div>
+                            <div class="acad-cgpa-display">
+                                <span class="acad-cgpa-number">7.51</span>
+                                <span class="acad-cgpa-label">CGPA</span>
+                            </div>
+                            <div class="acad-meta-grid">
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">College</span>
+                                    <span class="acad-meta-value">SRM University AP</span>
+                                </div>
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Course</span>
+                                    <span class="acad-meta-value">B.Tech</span>
+                                </div>
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Branch</span>
+                                    <span class="acad-meta-value">Computer Science &amp; Engineering</span>
+                                </div>
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Current Arrears</span>
+                                    <span class="acad-meta-value">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Intermediate Panel -->
+                        <div class="acad-panel" id="acad-inter">
+                            <div class="acad-panel-header">
+                                <h3>Intermediate – MPC</h3>
+                                <span class="acad-badge-status twelfth">12th Grade · 2023</span>
+                            </div>
+                            <div class="acad-cgpa-display">
+                                <span class="acad-cgpa-number" style="color:#a78bfa">8.95</span>
+                                <span class="acad-cgpa-label">CGPA</span>
+                            </div>
+                            <div class="acad-meta-grid">
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Institution</span>
+                                    <span class="acad-meta-value">Sri Chaitanya Junior College</span>
+                                </div>
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Board</span>
+                                    <span class="acad-meta-value">BIEAP (Andhra Pradesh)</span>
+                                </div>
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Stream</span>
+                                    <span class="acad-meta-value">MPC (Math, Physics, Chemistry)</span>
+                                </div>
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Year Passed</span>
+                                    <span class="acad-meta-value">2023</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 10th Panel -->
+                        <div class="acad-panel" id="acad-tenth">
+                            <div class="acad-panel-header">
+                                <h3>Secondary School Certificate (SSC)</h3>
+                                <span class="acad-badge-status tenth">10th Grade · 2021</span>
+                            </div>
+                            <div class="acad-cgpa-display">
+                                <span class="acad-cgpa-number" style="color:#f59e0b">9.5</span>
+                                <span class="acad-cgpa-label">CGPA</span>
+                            </div>
+                            <div class="acad-meta-grid">
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Institution</span>
+                                    <span class="acad-meta-value">Kesava Reddy English Medium</span>
+                                </div>
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Board</span>
+                                    <span class="acad-meta-value">AP SSC (Board of Secondary Education)</span>
+                                </div>
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Medium</span>
+                                    <span class="acad-meta-value">English Medium</span>
+                                </div>
+                                <div class="acad-meta-item">
+                                    <span class="acad-meta-label">Year Passed</span>
+                                    <span class="acad-meta-value">2021</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Get In Touch</span>
+                    <h2 class="section-title">Let's Create Together</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-details glass-panel">
+                        <h3>Connect Info</h3>
+                        <p>Have an exciting project, contract, or open position you want to discuss? Reach out and I will respond within 24 hours.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <span class="method-title">Email Me</span>
+                                    <a href="mailto:venugopalyarapa@gmail.com" class="method-value">venugopalyarapa@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <span class="method-title">Call Me</span>
+                                    <a href="tel:+918008202521" class="method-value">+91 80082 02521</a>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span class="method-title">Based In</span>
+                                    <span class="method-value">Andhra Pradesh, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/venugopalyarapa-hub" aria-label="GitHub" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com/in/yarapa-venu-gopal-1a9b83290" aria-label="LinkedIn" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/_.venu_yarapa?igsh=MTgzamQ2NzR5bXJlZw==" aria-label="Instagram" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://leetcode.com/u/venu_gopal_09/" aria-label="LeetCode" class="social-icon" target="_blank"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://www.codechef.com/users/y_venu_gopal" aria-label="CodeChef" class="social-icon" target="_blank"><i class="fa-solid fa-terminal"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-panel">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project detail..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">YVG<span>.</span></a>
+                <p>Building high-performance full-stack web applications and artificial intelligence integrations.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Yarapa Venu Gopal. All Rights Reserved. Built with Three.js & GSAP.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification for Form Submission -->
+    <div id="toast" class="toast-notification">
+        <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="toast-body">
+            <h4 class="toast-title">Message Sent!</h4>
+            <p class="toast-msg">Thank you, I will contact you soon.</p>
+        </div>
+    </div>
+
+    <!-- CDN Libraries: Three.js and GSAP (including ScrollTrigger) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script type="module" src="three-scene.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
